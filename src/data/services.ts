@@ -27,7 +27,7 @@ export interface MainService {
   subServices: SubService[];
 }
 
-const PHONE = "(843) 241-0787";
+const PHONE = "(888) 643-4199";
 
 // Helper to create a subService
 function sub(

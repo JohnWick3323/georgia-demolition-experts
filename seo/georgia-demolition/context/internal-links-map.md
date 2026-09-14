@@ -13,7 +13,7 @@
 - Service-in-city example: /locations/atlanta/residential-demolition/
 
 ## CTA pattern
-- First CTA within 500 words: "Get a free on-site estimate: (843) 241-0787"
+- First CTA within 500 words: "Get a free on-site estimate: (888) 643-4199"
 - Contextual CTAs: link to relevant city/service page + GHL form
 
 ## External authority links (2-3 per article)

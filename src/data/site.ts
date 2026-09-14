@@ -11,8 +11,8 @@ export const site = {
     geo: { lat: 33.7595, lng: -84.3871 }
   },
   serviceArea: 'Serving all 159 Georgia counties statewide',
-  phone: '(843) 241-0787',
-  phoneRaw: '8432410787',
+  phone: '(888) 643-4199',
+  phoneRaw: '8886434199',
   email: 'contact@georgiademolitionandremoval.com',
   openingHoursSpecification: [
     { dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '07:00', closes: '18:00' },

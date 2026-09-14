@@ -159,4 +159,4 @@ Structurally, maybe, but you still need the county permit, asbestos clearance, a
 
 ---
 
-**Ready to start?** Call **(843) 241-0787** or request a **free on-site estimate**. We provide licensed, insured demolition and removal across all 159 Georgia counties, residential, commercial, and industrial.
+**Ready to start?** Call **(888) 643-4199** or request a **free on-site estimate**. We provide licensed, insured demolition and removal across all 159 Georgia counties, residential, commercial, and industrial.

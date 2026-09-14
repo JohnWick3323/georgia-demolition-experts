@@ -48,11 +48,11 @@ print("city_service count:", len(cs))
 for u in cs[:6]:
     print("   %s meta=%r" % (u, rows[u]['meta']))
 
-# NAP consistency: phone (843) 241-0787
+# NAP consistency: phone (888) 643-4199
 print("\n=== NAP / PHONE ===")
 phone_variants = defaultdict(int)
 addr_present = 0
-for u,d in rows.items().items():
+for u,d in rows.items():
     raw = open(d['raw_path'], encoding='utf-8', errors='ignore').read()
     # find phone-like patterns
     found = re.findall(r'\(?\d{3}\)?[\s.\-]?\d{3}[\s.\-]?\d{4}', raw)
@@ -61,8 +61,8 @@ for u,d in rows.items().items():
 print("phone digit-strings (top):")
 for ph,c in Counter(phone_variants).most_common(10):
     print("   %s : %d pages" % (ph, c))
-# check 843 vs 404 area
-print("8432410787 (config) occurrences:", phone_variants.get('8432410787',0))
+# check 888 toll-free
+print("8886434199 (config) occurrences:", phone_variants.get('8886434199',0))
 
 # Review markup / aggregateRating detail
 print("\n=== REVIEW MARKUP ===")
@@ -74,7 +74,7 @@ print("404 has agg:", rows[SITE+'/404/']['agg_schema'] if (SITE+'/404/') in rows
 css = [u for u in rows.keys() if fam(u)=='city_service_sub']
 print("city_service_sub with aggRating:", sum(1 for u in css if rows[u]['agg_schema']))
 # check for actual Review items (individual reviews)
-withrev = [u for u,d in rows.items().items() if d['agg_schema'] and 'Review' in open(d['raw_path'],encoding='utf-8',errors='ignore').read()]
+withrev = [u for u,d in rows.items() if d['agg_schema'] and 'Review' in open(d['raw_path'],encoding='utf-8',errors='ignore').read()]
 print("pages whose schema contains 'Review' object:", len(withrev))
 # Extract the aggregateRating value from homepage
 home_raw = open(rows[SITE+'/']['raw_path'], encoding='utf-8', errors='ignore').read()
